@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+    #successMessage {
+      display: none;
+      color: rgb(16, 238, 16);
+      font-weight: bold;
+      margin-top: 15px;
+    }
+  </style>
+  <style>
+    #successMessage2 {
+      display: none;
+      color: rgb(80, 255, 135);
+      font-weight: bold;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+    <table >
+        <tr bgcolor="pink"><td>
+    <h2>Wellcome to :- <h1> "Teefy_Coder_Lab"</h1></h2>
+    Proprietor:
+    <b>Muhammad Touseef</b>
+    <br>
+    <br>
+    <hr>
+    <u><i>"Hello, my name is Muhammad Touseef, and I belong to a Pashtun family from Dera Ismail Khan, Khyber Pakhtunkhwa. I am currently a student of BS Computer Science at Gomal University, and I have a deep interest in programming. I enjoy solving problems through coding and constantly seek opportunities to learn, create something new, and bring innovation. My goal is to play a positive role in the world of programming and become a skilled developer who makes an impact through smart solutions."</i></u><br><br>
+    <br><img src="https://avatars.githubusercontent.com/u/221399606?v=4"  width="250">
+    <br>
+    <br>
+    <h3><i>“From the raw power of C to the elegance of C++, C#, and the structure of HTML, I’ve built  a strong foundation in both low-level and high-level programming. Each language has sharpened my problem-solving skills and expanded my creative potential.”</i></h3><br>
+    <br><i>I have learned those courses by the following timetable.</i><br><br>
+    <table border="1" cellpadding="10" cellspacing="0" align="center">
+        <thead bgcolor="gree" align="center">
+            <th>Courses</th>
+            <th>Time</th>
+            <th>Practice <br> per day</th>
+        </thead>
+        <tbody align="center">
+            <tr bgcolor="pink">
+            <td>C++</td>
+            <td>1 year</td>
+            <td>2 hr</td>
+            </tr>
+            <tr bgcolor="yellow">
+            <td>C</td>
+            <td>15 days</td>
+            <td>30 min</td>
+            </tr>
+            <tr bgcolor="pink">
+            <td>C#</td>
+            <td>20 days</td>
+            <td>1 hr</td>
+            </tr>
+            <tr bgcolor="yellow">
+            <td>HTML</td>
+            <td>1 week</td>
+            <td>1:30 hr</td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <p>If you are intrested to learn we provide those language in <b>free.</b> And we are aslo looking for some teachers. You can apply as a teacher to teach any language ni the <b>teefy_Coder_Lab</b>.</p>
+    <b>Fill your form and you can also fill both Form.</b><br><br>
+    </td>
+    </tr>
+    <tr>
+      <td>
+        <br><br><Br><br>
+      </td>
+    </tr>
+    <tr>
+        <td bgcolor="yellow">
+    <fieldset>
+        <legend><b> Student Form</b></legend>
+    <form id="applicationForm" onsubmit="showSuccess(event)">
+        
+        <label for="fullname">1. Name:</label><br>
+        <input type="text" id="fullname" name="fullname" required placeholder="enter your name"><br><br>
+        <label for="semester">2. Semester:</label><br>
+        <input type="tel" id="semester" name="semester" required placeholder="enter your current semester"><br><br>
+        <label for="email">3.Email:</label><br>
+        <input type="email" id="email" name="email" required placeholder="enter your email" ><br><br>
+         <label for="number">4.Number:</label><br>
+        <input type="tel" id="number" name="number" required placeholder="enter your phone number" ><br><br>
+        <label for="">5. Gender:</label><br>
+        <input type="radio" value="male"  name="Gender">male
+        <input type="radio" value="female" name="Gender">female <br>
+        <br><label for="age"> 6. Age: Limate 18 to 30. <br>
+        <input type="number" id="age" name="age" required max="30" min="18">
+        <br><br><label for="">7. Choice your language.</label><br>
+        <input type="radio" value="language" name="C++">C++ <br>
+        <input type="radio" value="language" name="C">C <br>
+        <input type="radio" value="language" name="C#">C# <br>
+        <input type="radio" value="language" name="Html">Html <br>
+         <br><label for="date">8. Enter the apply data.</label>
+        <br><input type="date" id="date" name="date" required><br><br>
+        <label for="time">9. Enter the apply time.</label>
+        <br><input type="time" id="time" name="time" required><br>  
+         <br><label for="image">8. Upload your image here.</label><br>
+         <input type="file" id="image" name="image" required>
+         <br><br> 
+        <br><br><input type="submit" value="submit">
+        <input type="reset"  value="reset">
+
+    </form>
+     <div id="successMessage">✅ You have applied successfully as a Student!</div>
+
+  <script>
+    function showSuccess(e) {
+      e.preventDefault(); // Prevent page reload
+      document.getElementById("successMessage").style.display = "block";
+    }
+  </script>
+    </fieldset>
+    </td>
+    </tr>
+    <tr bgcolour="pink">
+      <td>
+    <br><br><br><br>
+    </td>
+    </tr>
+        <tr bgcolor="yellow">
+            <td>
+        <fieldset>
+        <legend><b>Teacher Form</b></legend>
+    <form id="applicationForm2" onsubmit="show2uccess(event)">
+        
+        <label for="fullname">1. Name:</label><br>
+        <input type="text" id="fullname" name="fullname" required placeholder="enter your name"><br><br>
+        <label for="semester">2. Semester:</label><br>
+        <input type="tel" id="semester" name="semester" required placeholder="enter your current semester"><br><br>
+        <label for="email">3.Email:</label><br>
+        <input type="email" id="email" name="email" required placeholder="enter your email" ><br><br>
+         <label for="number">4.Number:</label><br>
+        <input type="tel" id="number" name="number" required placeholder="enter your phone number" ><br><br>
+        <label for="">5. Gender:</label><br>
+        <input type="radio" value="male"  name="Gender">male
+        <input type="radio" value="female" name="Gender">female <br>
+        <br><label for="age"> 6. Age: Limate 25 to 40. <br>
+        <input type="number" id="age" name="age" required max="40" min="25">
+        <br><br><label for="">7. Choice your language to teach.</label><br>
+        <input type="text" list="course"/>
+        <datalist id="course">
+            <option value="C++"></option>
+            <option value="C"></option>
+            <option value="C#"></option>
+            <option value="HTML"></option>
+        </datalist>
+        <br>
+         <br><label for="date">8. Enter the apply data.</label>
+        <br><input type="date" id="date" name="date" required><br><br>
+        <label for="time">9. Enter the apply time.</label>
+        <br><input type="time" id="time" name="time" required><br>  
+         <br><label for="image">8. Upload your image here.</label><br>
+         <input type="file" id="image" name="image" required>
+         <br><br> 
+        <br><br><input type="submit" value="submit">
+        <input type="reset"  value="reset">
+
+    </form>
+     <div id="successMessage2">✅ You have applied successfully as a Teacher!</div>
+
+  <script>
+    function show2uccess(e) {
+      e.preventDefault(); // Prevent page reload
+      document.getElementById("successMessage2").style.display = "block";
+    }
+  </script>
+    </fieldset>
+    </td>
+    </tr>
+    <tr>
+      <tr><td><br><br><br></td></tr>
+      <td>
+      <a href="https://www.facebook.com/touseef0583" target="_blank">Click here to get my Facebook account...</a>
+      <br>
+      <a href="https://www.instagram.com/touseef_pakhtun_0.5/" target="_blank">Click here to get my instagram account...</a>
+      <br><br><br>
+    </td>
+    </tr>
+</body>
+</html>
